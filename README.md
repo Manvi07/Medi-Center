@@ -1,6 +1,6 @@
 # MediCenter
 
-MediCenter is an online platform built using MEAN Stack to help users provide all the medical knowledge at one place, emergency services, online consultancy, emergency contacts of your nearest hospital. Details of all doctors around you regarding of specific expertise etc. Separate dashboards for doctors and patients. This project is currently under develop.
+MediCenter is an online platform built using MERN Stack to help users provide all the medical knowledge at one place, emergency services, online consultancy, emergency contacts of your nearest hospital. Details of all doctors around you regarding of specific expertise etc. Separate dashboards for doctors and patients. This project is currently under develop.
 
 ## Getting Started
 
