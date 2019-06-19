@@ -6,7 +6,6 @@ import { valueAction } from "../../actions/value-action";
 class Search_doctors extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
   }
 
   updatevalue = e => {
@@ -15,14 +14,15 @@ class Search_doctors extends Component {
 
   render() {
     return (
-      <div className="container-fluid" style={{ maxWidth: "60%" }}>
-        <h2>Select from the available names of the doctors</h2>
+      <div className="jumbotron container-fluid" style={{ maxWidth: "60%" }}>
+        <h2>Select from the available names of the doctors to appoint form</h2>
         <div className="input-group">
           <select
             className="custom-select"
             id="select_doctor"
             onChange={this.updatevalue}
           >
+            <option defaultValue>Doctor Name</option>
             {this.props.doctors.map(doctor => (
               <option key={doctor.name} value={doctor.name}>
                 {doctor.name}

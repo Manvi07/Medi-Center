@@ -11,26 +11,14 @@ class Nav extends Component {
             MediCenter
           </a>
           <ul className="navbar-nav ml-auto">
-            <Link to="/doctors">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Available Doctors <span className="sr-only">(current)</span>
-                </a>
-              </li>
+            <Link to="/" className="nav-link">
+              <li className="nav-item active">Available Doctors</li>
             </Link>
-            <Link to="/appointment-form">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Appointment Form
-                </a>
-              </li>
+            <Link to="/appointment-form" className="nav-link">
+              <li className="nav-item">Appointment Form</li>
             </Link>
-            <Link to="/history">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  History
-                </a>
-              </li>
+            <Link to="/history" className="nav-link">
+              <li className="nav-item">History</li>
             </Link>
           </ul>
         </nav>

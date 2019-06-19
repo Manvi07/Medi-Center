@@ -10,6 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (
       <div>
@@ -18,7 +19,7 @@ class App extends Component {
             <Nav />
             <br />
             <Switch>
-              <Route path="/doctors" component={Search_doctors} />
+              <Route path="/" exact component={Search_doctors} />
               <Route path="/appointment-form" component={Appointment_form} />
               <Route path="/history" component={History} />
             </Switch>

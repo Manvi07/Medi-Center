@@ -8,18 +8,22 @@ import { Provider } from "react-redux";
 import { createStore, combineReducers } from "redux";
 import valueReducer from "./reducers/value-reducer";
 import doctorReducer from "./reducers/doctors-reducer";
+import patientReducer from "./reducers/patient-reducer";
 
 const allReducers = combineReducers({
   doctors: doctorReducer,
-  value: valueReducer
+  value: valueReducer,
+  patient_data: patientReducer
 });
 
 const store = createStore(allReducers, {
   doctors: [{ name: "Doctor1" }, { name: "Doctor2" }, { name: "Doctor3" }],
-  value: ""
+  value: "",
+  patient_data: [{}]
 });
 
 console.log(store.getState());
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
