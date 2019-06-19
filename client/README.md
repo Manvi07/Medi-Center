@@ -1,4 +1,41 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Packages that are needed
+
+\$ sudo npm i bootstrap
+
+\$ sudo npm i redux
+
+\$ sudo npm i react-redux
+
+\$ sudo npm i reat-router-dom
+
+##About the user dashboard
+
+In the user dashboard consists of the following nav links:
+
+1.Doctors available
+2.Appointment form
+3.History of the appointments
+
+Doctors avialble page opens as the user is logged in.The user selects from the doctors currently available from the names listed ,for the online appointments.
+Then the page redirects to the online appointments page with the name of the doctor selected in the previous page and the submit button submits the form which can be viewed in the history section of the dashboard.
+
+## Contents of the src folder of the react-app and its flow
+
+-The user dashboard folder consists of the components of the user dashboard which are
+the appointment form ,doctors list ,history and navigation which are routed through the react-router-dom executed in the index.js file.
+
+-As the user selects the doctors from the provided doctors list the name of the doctor gets stored in value variable of the object in the store created in the
+index.js file.
+
+-The value which consists of the name of the doctor is viewed at the top of the appointment page.Then user fills the appointment page and
+the form gets submitted. And the values gets stored in the patient_data object in the store.
+
+-The recent appointments made by the user can be viewed in the history page.
+
+-The actions and reducers folder consists of the respective files for taking the actions and for updating the state according to the new value provided by the action. The combine reducers function (in index.js) combines the reducers and updates the state of the store.Which is in turn accessed by the various components of the user dashboard.
+
+-Still many things to add in the future...
 
 ## Available Scripts
 
